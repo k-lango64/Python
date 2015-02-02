@@ -7,3 +7,6 @@ def conta(palavra):
 
 # usando lambda
 consoante = lambda palavra: len([x for x in range(len(palavra)) if palavra[x] not in 'aeiou'])
+
+palavra = raw_input('Coloque a palavra que vc quer saber: ')
+print 'A palavra ',palavra,' tem %s consoantes'% (conta(palavra))
